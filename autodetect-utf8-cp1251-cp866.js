@@ -5,7 +5,6 @@ function summarizeFreqs(freq, str) {
 	var sum = 0;
 	for (var i = 0; i < str.length; i++) {
 		sum += (freq[str[i]] || 0);
-		console.log(str[i], freq[str[i]], sum);
 	}
 	return sum;
 }
@@ -27,9 +26,6 @@ function detectEncoding(buf) {
 	var probUtf8 = summarizeFreqs(freq, 'РС');
 	var probCp866 = summarizeFreqs(freq, '©ЄҐ­Ј§ўЇ®«¤¦¬Ўр‰–“Љ…Ќѓ�™‡•љ”›ЂЏђЋ‹„†ќџ—‘Њ€’њЃћ');
 	var probCp1251 = summarizeFreqs(freq, 'ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ');
-
-	console.log(freq);
-	console.log(probUtf8, probCp866, probCp1251);
 
 	var encoding;
 	// Собственно детектор
