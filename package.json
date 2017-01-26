@@ -1,0 +1,33 @@
+{
+  "name": "node-autodetect-utf8-cp1251-cp866",
+  "version": "0.1.0",
+  "description": "Simple tool to autodetect charset (utf8/cp1251/cp866)",
+  "main": "autodetect-utf8-cp1251-cp866.js",
+  "dependencies": {
+    "iconv-lite": "^0.4.15"
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickkolok/node-autodetect-utf8-cp1251-cp866.git"
+  },
+  "keywords": [
+    "node-autodetect-utf8-cp1251-cp866",
+    "autodetect-charset-utf8-cp1251-cp866",
+    "autodetect-charset",
+    "charset",
+    "encoding",
+    "utf8",
+    "cp1251",
+    "cp866",
+    "определение кодировки",
+    "кодировка"
+  ],
+  "author": "nickkolok",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nickkolok/node-autodetect-utf8-cp1251-cp866/issues"
+  },
+  "homepage": "https://github.com/nickkolok/node-autodetect-utf8-cp1251-cp866#readme"
+}
