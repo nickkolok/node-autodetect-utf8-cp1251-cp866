@@ -13,27 +13,6 @@ test('detect utf-8 in text of only latin', function () {
 		).encoding, 'utf8', 'return utf8');
 });
 
-test('detect utf-8 in text of only latin cp866', function () {
-	equal(
-		autoenc.detectEncoding(
-			fs.readFileSync( `${path}/cp866/latin866.txt` )
-		).encoding, 'cp866', 'return utf8');
-});
-
-test('detect utf-8 in text of only latin cp1251', function () {
-	equal(
-		autoenc.detectEncoding(
-			fs.readFileSync( `${path}/cp1251/latin1251.txt` )
-		).encoding, 'cp866', 'return utf8');
-});
-
-test('detect utf-8 in text of only latin utf8', function () {
-	equal(
-		autoenc.detectEncoding(
-			fs.readFileSync( `${path}/utf8/latinUTF8.txt` )
-		).encoding, 'cp866', 'return utf8');
-});
-
 test('detect cp866 in text of only cyrillic', function () {
 	equal(
 		autoenc.detectEncoding(
