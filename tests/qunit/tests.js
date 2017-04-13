@@ -32,4 +32,8 @@ test('detect utf8 in text of only cyrillic', function () {
 		autoenc.detectEncoding(
 			fs.readFileSync( `${path}/utf8/cyrillicUTF8.txt` )
 		).encoding, 'utf8', 'return utf8');
+	assert.equal(
+		autoenc.detectEncoding(
+			fs.readFileSync( `${path}/utf8/cyrillicUTF8short.txt` )
+		).encoding, 'utf8', 'return utf8');
 });
