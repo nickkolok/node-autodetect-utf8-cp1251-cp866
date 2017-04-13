@@ -1,8 +1,3 @@
-test("a basic test example", function () {
-	ok(true, "this test is fine");
-	var value = "hello";
-});
-
 test('detect utf-8 in text of only latin', function () {
 	equal(
 		autoenc.detectEncoding(
